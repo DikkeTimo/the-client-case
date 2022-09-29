@@ -2,33 +2,86 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav {
-  background-color: rgb(230, 38, 223);
+  background-color: white;
   display: flex;
   gap: 800px;
   height: 10ch;
-  border-style: solid;
 }
 
-a {
-  color: white;
+a:nth-of-type(1) {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
   margin-top: 2rem;
   max-height: 2ch;
 }
 
-img {
-  max-width: 25ch;
+a:nth-of-type(1):hover {
+  color: #b9005f;
+}
+
+img:first-child {
+  background-color: white;
+  max-width: 20ch;
   max-height: 6ch;
   margin-left: 3rem;
   margin-top: 1rem;
+}
+
+.footer {
+  position: relative;
+  position: absolute;
+}
+
+h1 {
+  color: white;
+  background-color: #b9005f;
+  border-radius: 10px;
+  opacity: 0.9;
+  position: absolute;
+  padding-top: 2.5rem;
+  width: 15em;
+  height: 4em;
+  top: 25%;
+  left: 35%;
+}
+
+img {
+  height: 27rem;
+  width: 100%;
 }
 
 .main {
   color: rgb(13, 13, 13);
   text-align: center;
   margin-top: 5rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 6rem;
+  width: 20ch;
+  gap: 25px;
+}
+
+a button {
+  background-color: #b9005f;
+  position: relative;
+  opacity: 0.9;
+  color: white;
+  min-width: 13rem;
+  min-height: 2rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px rgb(62, 60, 60);
+}
+
+a button:hover {
+  opacity: 1;
+  font-size: 20px;
 }
