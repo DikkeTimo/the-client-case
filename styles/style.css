@@ -9,7 +9,7 @@
 .nav {
   background-color: white;
   display: flex;
-  gap: 800px;
+  gap: 80em;
   height: 10ch;
 }
 
@@ -54,7 +54,7 @@ h1 {
 
 img:nth-child(2) {
   height: 27rem;
-  min-width: 100%;
+  min-width: 120%;
 }
 
 .main {
