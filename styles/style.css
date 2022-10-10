@@ -2,15 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
+  font: 100%/1.4 "Open Sans",
+    "Helvetica Neue",
+    Helvetica, Arial,
+    sans-serif;
 }
 
-.nav {
+body {
+  position: relative;
+  background-color: #ffe6f3;
+}
+
+nav {
   background-color: white;
   display: flex;
-  gap: 80em;
-  height: 10ch;
+  gap: 65%;
+  height: 8ch;
 }
 
 a:nth-of-type(1) {
@@ -43,7 +51,7 @@ h1 {
   color: white;
   background-color: #b9005f;
   border-radius: 10px;
-  opacity: 0.9;
+  opacity: 0.8;
   position: absolute;
   padding-top: 2.5rem;
   width: 15em;
@@ -57,7 +65,7 @@ img:nth-child(2) {
   min-width: 120%;
 }
 
-.main {
+.content {
   color: rgb(13, 13, 13);
   text-align: center;
   margin-top: 5rem;
@@ -74,13 +82,12 @@ img:nth-child(2) {
 
 a button {
   background-color: #b9005f;
+  border-color: white;
   position: relative;
-  opacity: 0.9;
   color: white;
   min-width: 15rem;
   min-height: 2rem;
-  border-radius: 8px;
-  box-shadow: 2px 2px rgb(62, 60, 60);
+  border-radius: 1px;
   transition-duration: 0.3s;
 }
 
@@ -94,42 +101,97 @@ a button:hover {
 
 /* onderstaande regels is voor overige pagina's */
 
-.nav1 {
-  background-color: white;
-  display: flex;
-  gap: 55em;
-  height: 9em;
+header {
+  max-width: 30em;
+  margin: 5%;
+}
+
+.box {
+  margin-top: 7em;
+  margin-left: 5%;
+  max-width: 50em;
 }
 
 .accordion {
   background-color: #b9005f;
   color: white;
   border-style: solid;
-  border-color: rgb(184, 178, 178);
-  border-radius: 4px;
-  margin-left: 15%;
-  width: 45rem;
+  border-color: rgb(
+    221,
+    221,
+    221
+  );
+  border-radius: 1px;
+  width: 50rem;
   height: 4em;
   font-size: 1rem;
 }
 
 .accordion:after {
   color: white;
-  content: "\f078";
+  content: "\002B";
   float: right;
   padding-right: 0.5rem;
 }
 
 .active:after {
-  background-color: rgb(255, 253, 253);
-  content: "\f078";
+  color: rgb(255, 253, 253);
+  content: "\2212";
 }
 
 .panel {
-  background-color: rgb(237, 234, 234);
+  background-color: rgb(
+    255,
+    255,
+    255
+  );
   display: none;
   border-radius: 5px;
+  text-align: left;
+  padding: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
   text-align: center;
-  margin-left: 15%;
-  max-width: 45rem;
+}
+
+.nav-bar {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 65em;
+  gap: 25px;
+  border: outset #b9005f;
+  padding: 30px;
+}
+
+code {
+  font-size: 1em;
+  background-color: rgb(
+    203,
+    203,
+    203
+  );
+  border-radius: 5px;
+  padding: 1px;
+  text-align: left;
+  border: solid;
+}
+
+pre {
+  background-color: rgb(
+    235,
+    230,
+    230
+  );
+  border-radius: 5px;
+  text-align: left;
+  overflow-x: scroll;
+}
+
+p {
+  text-align: left;
 }
