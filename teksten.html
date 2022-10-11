@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>toegankelijkheid</title>
+  </head>
+
+  <body>
+    <nav>
+      <img src="assets/Logo.png" alt="Logo website" />
+      <a href="index.html">
+        <span>Home</span>
+      </a>
+    </nav>
+
+    <div class="nav-bar">
+      <h4>Menu</h4>
+      <a href="afbeeldingen.html"><button>Afbeeldingen</button></a>
+      <a href="bediening.html"><button>Bediening</button></a>
+      <a href="formulieren.html"><button>Formulieren</button></a>
+      <a href="media.html"><button>Media</button></a>
+      <a href="navigatie.html"><button>Navigatie</button></a>
+      <a href="ontwerp.html"><button>Ontwerp</button></a>
+      <a href="teksten.html"><button>Teksten</button></a>
+    </div>
+
+    <header>
+      <p>
+        Tekst is de meest toegankelijke vorm van digitale informatie. Tekst kan namelijk
+        door hulptechnologieën op verschillende manieren worden gepresenteerd.
+        Voorleessoftware kan een tekst bijvoorbeeld omzetten in spraak (auditief) en een
+        brailleleesregel kan het vertalen naar braille (tactiel).
+
+        <br /><br />Een duidelijke structuur is belangrijk voor de toegankelijkheid van
+        een tekst. Voor structuur worden elementen gebruikt zoals koppen, tussenkoppen en
+        opsommingen. Deze structuur moet ook goed in de code worden vastgelegd. Daarnaast
+        moet de inhoud begrijpelijk zijn en in een logische volgorde aan bezoekers wordt
+        gepresenteerd. Ook dit moet allemaal op de juiste manier in de code worden
+        aangegeven.
+      </p>
+    </header>
+
+    <div class="box">
+      <button class="accordion">
+        Geef webpagina's een titel die het onderwerp of doel van de pagina beschrijft
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          De paginatitel van een webpagina moet het onderwerp of doel van de pagina
+          beschrijven. Een beschrijvende paginatitel maakt het voor iedereen makkelijker
+          om te navigeren door de website. Paginatitels worden getoond in het venster van
+          de browser of in het tabblad van de pagina. Met een goede paginatitel kunnen
+          bezoekers de pagina gemakkelijk terugvinden als er bijvoorbeeld meerdere
+          tabbladen open staan.<br /><br />
+
+          Goede paginatitels:
+        </p>
+
+        <ul>
+          <li>Beschrijven duidelijk het onderwerp of doel van de pagina.</li>
+          <li>Veranderen als een nieuwe pagina wordt ingeladen.</li>
+          <li>Hebben de unieke informatie vooraan.</li>
+          <li>Zijn uniform met de andere pagina’s.</li>
+          <li>Zijn beknopt.</li>
+          <li>Zijn uniek.</li>
+        </ul>
+
+        <p>
+          Paginatitels worden door hulptechnologieën gebruikt om de webpagina aan te
+          duiden. Deze informatie wordt als eerst gepresenteerd bij het openen van een
+          pagina.<br /><br />
+
+          Gebruik het <code>title</code>-element in het <code>&lthead&gt</code>-element in
+          de code van de pagina. Beschrijf in dit element het onderwerp of doel van de
+          pagina.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &lthtml lang="nl"&gt
+2  |   &lthead&gt
+3  |     &lttitle&gtHOME - Vervoerregio Amsterdam&lt/title&gt
+4  |     ...
+5  |   &lt/head&gt
+6  | ...
+7  | &lt/html&gt
+              </pre
+        >
+      </div>
+
+      <button class="accordion">
+        Gebruik koppen die het onderwerp of doel van de onderliggende tekst beschrijven
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          De koppen op een webpagina moeten het onderwerp of doel van de onderliggende
+          tekst beschrijven. Zorg dat elke kop iets zegt over de tekst die eronder staat.
+          Een beschrijvende kop maakt het voor iedereen makkelijker om informatie op een
+          pagina te vinden. Alle koppen samen horen een goed beeld te geven van de inhoud
+          van de webpagina. Zo kunnen bezoekers snel de structuur van een webpagina of
+          tekst herkennen.<br /><br />
+
+          Een kop moet altijd onderliggende inhoud hebben.<br /><br />
+
+          Bezoekers die gebruik maken van een schermlezer kunnen een lijst van alle koppen
+          gebruiken om over de webpagina te navigeren. Zij kunnen eventueel ook gelijk
+          springen naar de volgende kop.
+        </p>
+      </div>
+
+      <button class="accordion">
+        Zorg dat koppen zijn opgemaakt met een kop-element
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Door goede beschrijvende koppen te gebruiken kunnen bezoekers snel de structuur
+          in een tekst herkennen. Een koptekst heeft vaak een afwijkende vormgeving, het
+          wordt bijvoorbeeld groter en dikgedrukt weergegeven. Dat maakt het makkelijk om
+          de structuur van de pagina te scannen.<br /><br />
+
+          Structuur die alleen wordt overgebracht met vormgeving kan door bezoekers die
+          blind of slechtziend zijn niet (of niet goed) worden waargenomen. Voor deze
+          bezoekers is het belangrijk om structuur ook in de code vast te leggen. Zo kan
+          software de structuur en relaties op de webpagina ook bepalen.<br /><br />
+
+          Bezoekers die gebruik maken van een schermlezer kunnen een lijst van alle koppen
+          gebruiken om over de pagina te navigeren. Zij kunnen eventueel ook gelijk
+          springen naar de volgende kop.<br /><br />
+
+          Zorg dat koppen worden opgemaakt met een HTML kop-element (<code>&lth1&gt</code>
+          t/m <code>&lth6&gt</code>).<br /><br />
+
+          Zorg ook dat de volgorde van de koppen en tussenkoppen logisch is. Een paar
+          vuistregels zijn:
+        </p>
+
+        <ul class="lijst">
+          <li>De eerste kop op de pagina hoort een kop van het eerste niveau te zijn.</li>
+          <li>
+            Na een kop van het eerste niveau hoort een kop van het tweede niveau te
+            volgen.
+          </li>
+          <li>
+            Na een kop van het tweede niveau hoort opnieuw een kop van het tweede niveau
+            volgen óf een kop van het derde niveau.
+          </li>
+          <li>Kopniveaus horen niet te worden overgeslagen.</li>
+        </ul>
+
+        <pre>
+
+1  | &lth1&gtKop van het eerste niveau&lt/h1&gt
+2  | &lth2&gtTussenkop van het tweede niveau&lt/h2&gt
+3  | &ltp&gt...&lt/p&gt
+4  | &lth2&gtTussenkop van het tweede niveau&lt/h2&gt
+5  | &ltp&gt...&lt/p&gt
+6  | 
+7  | &lth2&gtTussenkop van het tweede niveau&lt/h2&gt
+8  | &ltp&gt...&lt/p&gt
+9  | &lth3&gtTussenkop van het derde niveau&lt/h3&gt
+10 | &ltp&gt...&lt/p&gt
+          </pre
+        >
+      </div>
+
+      <button class="accordion">
+        Zorg dat lijsten zijn opgemaakt met een lijst-element
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Lijsten benadrukken belangrijke punten in een tekst. Een lijst heeft vaak een
+          afwijkende vormgeving, onderdelen van een lijst worden opgemaakt met een
+          opsommingsteken of met een nummer.<br /><br />
+
+          Structuur die alleen wordt overgebracht met vormgeving kan door bezoekers die
+          blind of slechtziend zijn niet (of niet goed) worden waargenomen. Voor deze
+          bezoekers is het belangrijk om structuur ook in de code vast te leggen. Zo kan
+          software de structuur en relaties op de webpagina ook bepalen.<br /><br />
+
+          Bezoekers die gebruik maken van een schermlezer kunnen makkelijker door een
+          lijst navigeren. Schermlezers geven bijvoorbeeld aan hoeveel onderdelen er in de
+          lijst staan en bieden de mogelijkheid om de lijst gelijk over te slaan.<br /><br />
+
+          Zorg dat lijsten worden opgemaakt met een lijst-element. Er zijn verschillende
+          soorten lijsten: een opsomming (
+          <code>&ltul&gt</code>), een genummerde lijst (<code>&ltol&gt</code>) en een
+          lijst met beschrijvingen (<code>&ltdl&gt</code>).
+        </p>
+
+        <h2>Opsomming</h2>
+
+        <p>
+          Onderdelen in een opsomming worden voorafgegaan door een opsommingsteken zoals
+          een bolletje of een streepje. Gebruik opsommingen als de volgorde van de
+          onderdelen in de lijst niet belangrijk is.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &ltul&gt
+2  |   &ltli&gtEerste onderdeel van een opsomming&lt/li&gt
+3  |   &ltli&gtTweede onderdeel van een opsomming&lt/li&gt
+4  |   ...
+5  | &lt/ul&gt
+              </pre
+        >
+
+        <h2>Genummerde lijst</h2>
+
+        <p>
+          Onderdelen in een genummerde lijst worden voorafgegaan door een nummer. Gebruik
+          genummerde lijsten als de volgorde van onderdelen in de lijst wél belangrijk
+          is.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &ltol&gt
+2  |   &ltli&gtEerste onderdeel van een genummerde lijst&lt/li&gt
+3  |   &ltli&gtTweede onderdeel van een genummerde lijst&lt/li&gt
+4  |   ...
+5  | &lt/ol&gt
+              </pre
+        >
+
+        <h2>Lijst met beschrijvingen</h2>
+
+        <p>
+          Gebruik een lijst met beschrijvingen bij lijsten die bestaan uit een naam, term
+          of begrip met een beschrijving die daar bij hoort. Gebruik deze lijsten
+          bijvoorbeeld voor een verklarende woordenlijst. Binnen een lijst met
+          beschrijvingen wordt het <code>&ltdt&gt</code>-element gebruikt om een term aan
+          te geven en wordt het <code>&ltdd&gt</code>-element om de beschrijving aan te
+          geven.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &ltdl&gt
+2  |   &ltdt&gtconformiteit&lt/dt&gt
+3  |   &ltdd&gtvoldoen aan alle eisen van een gegeven standaard, richtlijn of specificatie&lt/dd&gt
+4  |   &ltdt&gtcontent (webcontent)&lt/dt&gt
+5  |   &ltdd&gtinformatie en zintuiglijke ervaring die aan de gebruiker doorgegeven wordt door middel van een user agent, met inbegrip van code of opmaak die de structuur, presentatie en interacties van de content definieert&lt/dd&gt
+6  | &lt/dl&gt
+          </pre
+        >
+      </div>
+
+      <button class="accordion">
+        Zorg dat tabellen zijn opgemaakt met een tabel-element
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Tabellen bestaan uit rijen en kolommen. De gegevens in de rijen en kolommen
+          hebben een onderlinge relatie met elkaar. Voor bezoekers met een visuele
+          beperking is deze relatie niet direct duidelijk. Voor deze bezoekers is het
+          belangrijk dat deze relaties ook in de code wordt vastgelegd.<br /><br />
+
+          Structuur en relaties die alleen worden overgebracht met vormgeving kan door
+          bezoekers die blind of slechtziend zijn niet (of niet goed) worden waargenomen.
+          Voor deze bezoekers is het belangrijk om structuur ook in de code vast te
+          leggen. Zo kan software de structuur en relaties op de webpagina ook bepalen.<br /><br />
+
+          Bezoekers die gebruik maken van een schermlezer kunnen makkelijker door een
+          lijst navigeren. Schermlezers geven bijvoorbeeld aan hoeveel onderdelen er in de
+          lijst staan en bieden de mogelijkheid om de lijst gelijk over te slaan.<br /><br />
+
+          Zorg dat lijsten worden opgemaakt met een tabel-element (
+          <code>&lttable&gt</code>). In dit element moet ook worden aangegeven wat een
+          tabelkop is en wat de gegevenscellen zijn. De tabelkoppen worden in de code
+          vastgelegd met een <code>&ltth&gt</code>-element, gegevenscellen met een
+          <code>&lttd&gt</code>-element. In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &lttable&gt
+2  |   &lttr&gt
+3  |     &ltth&gtKop van de eerste kolom&lt/th&gt
+4  |     &ltth&gtKop van de tweede kolom&lt/th&gt
+5  |     &ltth&gtKop van de derde kolom&lt/th&gt
+6  |   &lt/tr&gt
+7  |   &lttr&gt
+8  |     &lttd&gtGegevens in de eerste kolom&lt/td&gt
+9  |     &lttd&gtGegevens in de tweede kolom&lt/td&gt
+10 |     &lttd&gtGegevens in de derde kolom&lt/td&gt
+11 |   &lt/tr&gt
+12 |   ...
+13 | &lt/table&gt
+              </pre
+        >
+
+        <p>
+          Geef de tabel ook een korte beschrijving. Deze beschrijving wordt in de code
+          vastgelegd met een <code>&ltcaption&gt</code>-element. Een goede beschrijving
+          helpt bezoekers om een tabel te vinden en te begrijpen waar de tabel over
+          gaat.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &lttable&gt
+2  |   &ltcaption&gtBeschrijving van de tabel&lt/caption&gt
+3  |   &lttr&gt
+4  |     &ltth&gtKop van de eerste kolom&lt/th&gt
+5  |     ...
+6  | &lt/table&gt
+              </pre
+        >
+      </div>
+
+      <button class="accordion">
+        Geef links een linktekst die het doel van de link beschrijft
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Geef links op een webpagina een linktekst waaruit het doel van de link duidelijk
+          is af te leiden. Een beschrijvende linktekst is voor iedereen duidelijker. Zorg
+          dat de linktekst zo is geformuleerd dat bezoekers direct weten waar de link naar
+          verwijst.<br /><br />
+
+          Schrijf dus niet:
+        </p>
+
+        <ul>
+          <li>Lees meer. (onduidelijk)</li>
+          <li>LinkedIn. (onduidelijk)</li>
+        </ul>
+
+        <p>Maar zeg wel:</p>
+
+        <ul>
+          <li>Lees meer de over digitale toegankelijkheid.</li>
+          <li>Ga naar onze LinkedIn pagina.</li>
+        </ul>
+
+        <p>
+          Bezoekers die gebruik maken van een schermlezer kunnen een lijst met alle links
+          gebruiken om over de pagina te navigeren.<br /><br />
+
+          Als het echt niet anders kan, dan mag ook nog de context van de link worden
+          gebruikt om het doel van de link te beschrijven. Bijvoorbeeld dezelfde zin,
+          paragraaf of in dezelfde tabelcel. De linktekst kan in de code ook worden
+          uitgebreid met het aria-label-attribuut of met het title-attribuut.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &lta href="info.html" aria-label="Lees meer over digitale toegankelijkheid"&gtLees meer&lt/a&gt
+2  | 
+3  | &lta href="info.html" title="Lees meer over digitale toegankelijkheid"&gtLees meer&lt/a&gt
+                  </pre
+        >
+
+        <p>Wat ook kan is het verbergen van een deel van de linktekst met CSS:</p>
+
+        <pre>
+
+1  | &lta href="info.html"&gtLees meer &ltspan class="assistive"&gtover digitale toegankelijkheid&lt/span&gt&lt/a&gt
+                  </pre
+        >
+
+        <pre>
+
+1  | .assistive {
+2  |    position:absolute;
+3  |    left:-10000px;
+4  |    top:auto;
+5  |    width:1px;
+6  |    height:1px;
+7  |    overflow:hidden;
+8  | }
+              </pre
+        >
+
+        <p>
+          Een linktekst mag nooit leeg zijn. Zonder linktekst kan natuurlijk niet worden
+          bepaald waar de link naar verwijst. Een lege link is misschien niet zichtbaar op
+          de pagina maar deze links komen wél terug in de focus volgorde. Schermlezers
+          merken deze ook link op.<br /><br />
+
+          In de gevallen dat niet tekst maar alleen een afbeelding als link wordt
+          gebruikt, spreken we over functionele afbeeldingen. Geef afbeeldingen die ook
+          een link zijn een tekstalternatief dat beschrijft waar de link naar verwijst.
+          Als er een afbeelding én een tekst gebruikt worden met allebei hetzelfde
+          linkdoel, dan is het beter om deze te combineren tot één link. Voor bezoekers
+          die gebruik maken van hulptechnologieën kan het storend zijn als dezelfde link
+          twee keer direct na elkaar voorkomt.
+        </p>
+      </div>
+
+      <button class="accordion">
+        Gebruik in instructies geen onderdelen die alleen worden aangeduid met kleur, vorm
+        of locatie
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Verwijs in instructies niet alleen naar zintuiglijke eigenschappen van
+          componenten zoals vorm, kleur, omvang, locatie, oriëntatie of geluid. Gebruik
+          daarnaast ook tekst.<br /><br />
+
+          Schrijf dus niet:
+        </p>
+
+        <ul>
+          <li>
+            Gebruik de <strong>ronde</strong> knop om je gegevens te verzenden. (vorm)
+          </li>
+          <li>
+            Op de dagen met een <strong>groen</strong> bolletje zijn wij beschikbaar.
+            (kleur)
+          </li>
+          <li>
+            Klik op de knop <strong>rechts onderaan</strong> de pagina om naar de volgende
+            pagina te gaan. (locatie)
+          </li>
+        </ul>
+
+        <p>Maar zeg wel:</p>
+
+        <ul>
+          <li>
+            Gebruik de (ronde, groene) knop (onderaan) met tekst “Verzenden” om je
+            gegevens te in te sturen.
+          </li>
+        </ul>
+
+        <p>
+          Instructies waarin alleen zintuiglijke eigenschappen worden gebruikt zijn niet
+          door alle bezoekers goed te volgen. Zo kunnen bezoekers die blind of slechtziend
+          zijn vorm, omvang of locatie niet waarnemen. Instructies waarin alleen geluid
+          wordt gebruikt zijn niet, of niet goed, te volgen voor bezoekers die doof of
+          slechthorend zijn.
+        </p>
+      </div>
+
+      <button class="accordion">Geef de taal van de pagina aan</button>
+      <div class="panel">
+        <br />
+        <p>
+          Geef de standaard taal van een webpagina aan in de code. Zo kan software de taal
+          van de webpagina bepalen. Als er meerdere talen op een webpagina voorkomen,
+          gebruik dan de taal die het meest voorkomt.<br /><br />
+
+          Voorleessoftware spreekt een webpagina uit. De uitspraak van de woorden is
+          afhankelijk van de taal van de pagina. Als er geen (of een verkeerde) taal wordt
+          aangegeven in de code, dan kan voorleessoftware de content mogelijk verkeerd of
+          onduidelijk voorlezen. De standaardtaal van de browser wordt dan gebruikt en
+          deze komt niet altijd overeen met de taal van de content.<br /><br />
+
+          Voeg het <code>lang</code>-attribuut toe aan -element om de taal van een
+          webpagina in te stellen. Gebruik in dit attribuut de juiste taalcode. Zo’n
+          taalcode bestaat uit een tweeletterige code.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &lt;html lang="nl"&gt
+2  | ...
+3  | &lt/html&gt
+              </pre
+        >
+        <p>
+          Voor alle talen bestaat een eigen aanduiding. Voor het Nederlands is dat
+          <code>‘nl‘</code> (<code>lang="nl"</code>), voor het Engels
+          <code>‘en‘</code> (<code>lang="en"</code>), voor het Duits
+          <code>‘de‘</code> (<code>lang="de"</code>). <br />Bekijk alle taalcodes op
+          <a
+            href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
+            target="_blank"
+            >IANA Language Subtag Registry</a
+          >
+          (Engelstalig).
+        </p>
+      </div>
+
+      <button class="accordion">
+        Geef de taal aan van tekst dat in een andere taal is geschreven
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Als een zin of paragraaf in de content in een andere taal dan de standaard taal
+          is geschreven, dan moet dit worden aangegeven in de code. Zo kan software de
+          taal van de webpagina bepalen. Deze verplichting geldt alleen voor zinnen en
+          paragrafen, dus niet voor losse woorden.<br /><br />
+
+          Voorleessoftware spreekt een webpagina uit. De uitspraak van de woorden is
+          afhankelijk van de taal van de pagina. Als er geen (of een verkeerde) taal wordt
+          aangegeven in de code, dan kan voorleessoftware de content mogelijk verkeerd of
+          onduidelijk voorlezen. De standaardtaal van de browser wordt dan gebruikt en
+          deze komt niet altijd overeen met de taal van de content.<br /><br />
+
+          Voeg het <code>lang</code>-attribuut toe aan de elementen met een andere taal.
+          Geeft dit attribuut een waarde dit bestaat uit een tweeletterige code die staat
+          voor een taal. Het <code>lang</code>-attribuut kan worden gebruikt op
+          blok-niveau (<code>&ltdiv&gt</code>, <code>&ltp&gt</code>,
+          <code>&lttable&gt</code>, enz.) maar ook op inline-elementen
+          (<code>&ltspan&gt</code>, <code>&lta&gt</code>, <code>&ltstrong&gt</code>,
+          enz.).<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+        <pre>
+
+1  | &ltp lang="en"&gtThe quick brown fox jumps over the lazy dog.&lt/p&gt
+2  | 
+3  | &ltp lang="en"&gtIn Dutch we say &ltspan lang="nl"&gtPa's wijze lynx bezag vroom het fikse aquaduct&lt/span&gt.&lt/p&gt
+          </pre
+        >
+
+        <p>
+          Er geldt een uitzondering voor eigennamen, technische termen, woorden van een
+          onbepaalde taal, en woorden of uitdrukkingen die deel zijn gaan uitmaken van de
+          volkstaal van de omringende tekst.<br /><br />
+
+          Bekijk alle taalcodes op
+          <a
+            href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
+            target="_blank"
+            >IANA Language Subtag Registry</a
+          >
+          (Engelstalig).
+        </p>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

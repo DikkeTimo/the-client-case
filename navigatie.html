@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>toegankelijkheid</title>
+  </head>
+
+  <body>
+    <nav>
+      <img src="assets/Logo.png" alt="Logo website" />
+      <a href="index.html">
+        <span>Home</span>
+      </a>
+    </nav>
+
+    <div class="nav-bar">
+      <h4>Menu</h4>
+      <a href="afbeeldingen.html"><button>Afbeeldingen</button></a>
+      <a href="bediening.html"><button>Bediening</button></a>
+      <a href="formulieren.html"><button>Formulieren</button></a>
+      <a href="media.html"><button>Media</button></a>
+      <a href="navigatie.html"><button>Navigatie</button></a>
+      <a href="ontwerp.html"><button>Ontwerp</button></a>
+      <a href="teksten.html"><button>Teksten</button></a>
+    </div>
+
+    <header>
+      <p>
+        De navigatie is een belangrijk onderdeel van een website. Door te zorgen dat alle
+        bezoekers goed over een website kunnen navigeren, krijgen ze toegang tot alle
+        beschikbare informatie.
+
+        <br /><br />Een gestructureerde en consequente paginaopbouw en skiplinks zorgen
+        dat bezoekers zonder veel moeite over de pagina kunnen navigeren.
+      </p>
+    </header>
+
+    <div class="box">
+      <button class="accordion">
+        Geef webpagina's een titel die het onderwerp of doel van de pagina beschrijft
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          De paginatitel van een webpagina moet het onderwerp of doel van de pagina
+          beschrijven. Een beschrijvende paginatitel maakt het voor iedereen makkelijker
+          om te navigeren door de website. Paginatitels worden getoond in het venster van
+          de browser of in het tabblad van de pagina. Met een goede paginatitel kunnen
+          bezoekers de pagina gemakkelijk terugvinden als er bijvoorbeeld meerdere
+          tabbladen open staan.
+
+          <br /><br />Goede paginatitels:
+        </p>
+
+        <ul>
+          <li>Beschrijven duidelijk het onderwerp of doel van de pagina.</li>
+          <li>Veranderen als een nieuwe pagina wordt ingeladen.</li>
+          <li>Hebben de unieke informatie vooraan.</li>
+          <li>Zijn uniform met de andere pagina’s.</li>
+          <li>Zijn beknopt.</li>
+          <li>Zijn uniek.</li>
+        </ul>
+
+        <p>
+          Paginatitels worden door hulptechnologieën gebruikt om de webpagina aan te
+          duiden. Deze informatie wordt als eerst gepresenteerd bij het openen van een
+          pagina.<br /><br />
+
+          Gebruik het <code>title</code>-element in het <code>&lthead&gt</code>-element in
+          de code van de pagina. Beschrijf in dit element het onderwerp of doel van de
+          pagina.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+        <pre>
+
+1  | &lthtml lang="nl"&gt
+2  |   &lthead&gt
+3  |     &lttitle&gtHOME - Vervoerregio Amsterdam&lt/title&gt
+4  |     ...
+5  |   &lt/head&gt
+6  | ...
+7  | &lt/html&gt
+          </pre
+        >
+      </div>
+
+      <button class="accordion">
+        Geef links een linktekst die het doel van de link beschrijft
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Geef links op een webpagina een linktekst waaruit het doel van de link duidelijk
+          is af te leiden. Een beschrijvende linktekst is voor iedereen duidelijker. Zorg
+          dat de linktekst zo is geformuleerd dat bezoekers direct weten waar de link naar
+          verwijst.<br /><br />
+
+          Schrijf dus niet:
+        </p>
+
+        <ul>
+          <li>Lees meer. (onduidelijk)</li>
+          <li>LinkedIn. (onduidelijk)</li>
+        </ul>
+
+        <p>Maar zeg wel:</p>
+
+        <ul>
+          <li>Lees meer de over digitale toegankelijkheid.</li>
+          <li>Ga naar onze LinkedIn pagina.</li>
+        </ul>
+
+        <p>
+          Bezoekers die gebruik maken van een schermlezer kunnen een lijst met alle links
+          gebruiken om over de pagina te navigeren.<br /><br />
+
+          Als het echt niet anders kan, dan mag ook nog de context van de link worden
+          gebruikt om het doel van de link te beschrijven. Bijvoorbeeld dezelfde zin,
+          paragraaf of in dezelfde tabelcel. De linktekst kan in de code ook worden
+          uitgebreid met het <code>aria-label</code>-attribuut of met het
+          <code>title</code>-attribuut.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &lta href="info.html" aria-label="Lees meer over digitale toegankelijkheid"&gtLees meer&lt/a&gt
+2  |
+3  | &lta href="info.html" title="Lees meer over digitale toegankelijkheid"&gtLees meer&lt/a&gt
+          </pre
+        >
+
+        <p>Wat ook kan is het verbergen van een deel van de linktekst met CSS:</p>
+        <pre>
+
+1  | &lta href="info.html"&gtLees meer &ltspan class="assistive"&gtover digitale toegankelijkheid&lt/span&gt&lt/a&gt
+          </pre
+        >
+
+        <pre>
+
+1  | .assistive {
+2  |    position:absolute;
+3  |    left:-10000px;
+4  |    top:auto;
+5  |    width:1px;
+6  |    height:1px;
+7  |    overflow:hidden;
+8  | }
+          </pre
+        >
+
+        <p>
+          Een linktekst mag nooit leeg zijn. Zonder linktekst kan natuurlijk niet worden
+          bepaald waar de link naar verwijst. Een lege link is misschien niet zichtbaar op
+          de pagina maar deze links komen wél terug in de focus volgorde. Schermlezers
+          merken deze ook link op.<br /><br />
+
+          In de gevallen dat niet tekst maar alleen een afbeelding als link wordt
+          gebruikt, spreken we over functionele afbeeldingen. Geef afbeeldingen die ook
+          een link zijn een tekstalternatief dat beschrijft waar de link naar verwijst.
+          Als er een afbeelding én een tekst gebruikt worden met allebei hetzelfde
+          linkdoel, dan is het beter om deze te combineren tot één link. Voor bezoekers
+          die gebruik maken van hulptechnologieën kan het storend zijn als dezelfde link
+          twee keer direct na elkaar voorkomt.
+        </p>
+      </div>
+
+      <button class="accordion">
+        Zorg dat herhalende blokken op een pagina overgeslagen kunnen worden
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Op veel websites staan blokken content die op iedere pagina worden herhaald.
+          Bijvoorbeeld het logo, het navigatiemenu, het zoekveld, enz. Bezoekers die
+          gebruik maken van een schermlezer, zoals voorleessoftware of een
+          brailleleesregel, en bezoekers die met het toetsenbord navigeren moeten, iedere
+          keer als ze op een pagina komen, bovenaan de pagina beginnen. De inhoud wordt
+          steeds volledig voorgelezen voordat zij uitkomen bij de inhoud op de pagina. Het
+          navigeren duurt zo erg lang.<br /><br />
+
+          Zorg daarom voor een manier dat zorgt dat bezoekers herhalende blokken kunnen
+          overslaan. Dit kan grofweg op 2 manieren worden opgelost:
+        </p>
+
+        <ul>
+          <li>Voeg skiplinks toe.</li>
+          <li>Groepeer onderdelen in de code.</li>
+        </ul>
+
+        <h2>Voeg skiplinks toe</h2>
+        <p>
+          Een skiplink is een ankerlink die verwijst naar een onderdeel lager op de
+          pagina. Hiermee geef je bezoekers de mogelijkheid om sneller bij een
+          pagina-onderdeel te komen. Skiplinks zijn doorgaans niet gelijk zichtbaar, maar
+          worden ze pas zichtbaar als er met het toetsenbord door de pagina wordt
+          genavigeerd.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+
+        <pre>
+
+1  | &lthtml&gt
+2  |   &ltbody&gt
+3  |     &ltheader&gt
+4  |       &lta href="#content"&gtGa naar de inhoud&lt/a&gt
+5  |       &ltimg src="logo.jpg" alt="Vervoerregio.nl"&gt
+6  |       &ltnav&gt
+7  |       ...-s 8  |       &lt/nav&gt
+9  |     &lt/header&gt
+10 |     &ltmain&gt
+11 |       &lth1 id="content" tabindex="-1"&gtInhoud&lt/h1&gt
+12 |       ...
+13 |     &lt/main&gt
+14 |   &lt/body&gt
+15 | &lt/html&gt
+              </pre
+        >
+
+        <p>
+          Skiplinks horen het eerste element op een pagina te zijn. Zet ze dus bovenaan in
+          de code en gebruik ze op iedere pagina waarop herhalende blokken staan.
+        </p>
+
+        <h2>Groepeer onderdelen in de code</h2>
+        <p>
+          Herhalende blokken overslaan kan ook door deze onderdelen te groeperen in de
+          code. Hiervoor bestaan meerdere technieken. Door deze onderdelen te groeperen
+          kunnen bezoekers die gebruik maken van hulptechnologieën gemakkelijk over de
+          pagina navigeren. Deze bezoekers kunnen bijvoorbeeld een lijst van alle koppen
+          gebruiken of direct naar een oriëntatiepunt navigeren.
+        </p>
+
+        <ul>
+          <li>Gebruik een kop-element aan het begin van alle blokken op een pagina.</li>
+          <li>
+            Gebruik ARIA landmark-elementen zoals <code>&ltheader&gt</code>,
+            <code>&ltmain&gt</code> en <code>&ltfooter&gt</code> maar ook bijvoorbeeld de
+            navigatie en de zoekfunctie.
+          </li>
+        </ul>
+        <p>
+          Dit moet wel op iedere pagina op dezelfde manier toegepast worden.<br /><br />
+
+          Zorg ook dat alle <code>&ltiframe&gt</code>-elementen een naam hebben zodat ze
+          gemakkelijk overgeslagen kunnen worden. Gebruik hiervoor het
+          <code>title</code>-attribuut. Zorg dat deze beschrijving het onderwerp of doel
+          van het filmpje goed beschrijft.<br /><br />
+
+          In de code ziet dat er zo uit:
+        </p>
+        <pre>
+
+1  | &ltiframe src="https://www.youtube.com/embed/..." title="Digitale toegankelijkheid uitgelegd"&gt
+2  | &lt/iframe&gt
+              </pre
+        >
+      </div>
+
+      <button class="accordion">
+        Zorg voor meerdere manieren om een pagina te vinden
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Webpagina’s moeten op meer dan één manier te vinden zijn. Sommige bezoekers
+          kunnen moeite hebben met het begrijpen van de navigatie op een website, of
+          vinden een bepaalde navigatiemethode makkelijker of sneller.<br /><br />
+
+          Zorg daarom voor meer dan één manier om een pagina op een website te vinden.
+          Bied naast de navigatie bijvoorbeeld ook een zoekfunctie aan, of publiceer een
+          pagina met een sitemap.
+        </p>
+      </div>
+
+      <button class="accordion">
+        Plaats pagina-onderdelen op iedere pagina in een vaste volgorde
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Navigatiemenu’s en onderdelen die op meerdere webpagina’s voorkomen, moeten
+          telkens in dezelfde volgorde worden geplaatst. Zorg dat deze volgorde zowel in
+          de vormgeving als in de code hetzelfde is.<br /><br />
+
+          Een consistente navigatie- en paginastructuur maakt het voor iedereen
+          makkelijker om te navigeren door de website en informatie op een pagina te
+          vinden. Ook bezoekers die gebruik maken van schermlezers kunnen hierdoor sneller
+          en efficiënter hun weg vinden.
+        </p>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

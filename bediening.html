@@ -15,280 +15,142 @@
       </a>
     </nav>
 
-      <div class="nav-bar">
-        <h4>Menu</h4>
-        <a href="afbeeldingen.html"><button>Afbeeldingen</button></a>
-        <a href="bediening.html"><button>Bediening</button></a>
-        <a href="main.html"><button>Formuleren</button></a>
-        <a href="main.html"><button>Media</button></a>
-        <a href="main.html"><button>Navigatie</button></a>
-        <a href="main.html"><button>Ontwerp</button></a>
-        <a href="main.html"><button>Teksten</button></a>
+    <div class="nav-bar">
+      <h4>Menu</h4>
+      <a href="afbeeldingen.html"><button>Afbeeldingen</button></a>
+      <a href="bediening.html"><button>Bediening</button></a>
+      <a href="formulieren.html"><button>Formulieren</button></a>
+      <a href="media.html"><button>Media</button></a>
+      <a href="navigatie.html"><button>Navigatie</button></a>
+      <a href="ontwerp.html"><button>Ontwerp</button></a>
+      <a href="teksten.html"><button>Teksten</button></a>
+    </div>
+
+    <header>
+      <p>
+        Bediening van een website is één van de belangrijkste onderdelen. Zonder goede
+        bediening ook geen interactie.
+      </p>
+      <br />
+      <p>
+        Veel bezoekers gebruiken een muis en toetsenbord om over het web te navigeren.
+        Maar dit is niet voor iedereen vanzelfsprekend. Zorg dat functionaliteit niet
+        alleen via muis of toetsenbord te gebruiken is.
+      </p>
+    </header>
+
+    <div class="box">
+      <button class="accordion">
+        Zorg dat alle functies te bereiken en gebruiken zijn met alleen het toetsenbord
+      </button>
+      <div class="panel">
+        <p>
+          Alle functies op een website moeten te bereiken en gebruiken zijn met alleen het
+          toetsenbord. Sommige bezoekers kunnen geen muis gebruiken door bijvoorbeeld een
+          visuele of motorische beperking. Als alle functionaliteit met het toetsenbord
+          kan worden bediend, dan werkt deze ook met een groot aantal hulptechnologieën.
+          Zorg daarom dat onderdelen zoals links, knoppen, navigatie, invoervelden,
+          selectievakjes, keuzerondjes, keuzelijsten en alle andere interactieve functies
+          de toetsenbordfocus kunnen krijgen en kunnen worden gebruikt.
+
+          <br /><br />Standaard HTML-elementen voor links, knoppen en formulierelementen
+          op de website zijn goed toegankelijk met het toetsenbord.
+
+          <br /><br />De standaard toetsenbordnavigatie is als volgt:
+        </p>
+        <br />
+        <ul>
+          <li>Met TAB navigeert de toetsenbordfocus vooruit.</li>
+          <li>Met SHIFT + TAB navigeert de toetsenbordfocus achteruit.</li>
+          <li>
+            Met de pijltoetsen kan worden genavigeerd in gegroepeerde menu’s of
+            radiobuttons.
+          </li>
+        </ul>
+        <p>
+          <br />Bezoekers die gebruik maken van het toetsenbord gebruiken de TAB-toets om
+          door een website te navigeren. De TAB-toets verplaatst de toetsenbordfocus naar
+          het volgende focuseerbare onderdeel.
+        </p>
       </div>
 
-      <header>
+      <button class="accordion">
+        Zorg dat een bezoeker die alleen het toetsenbord gebruikt niet vast komt te zitten
+        op de pagina
+      </button>
+      <div class="panel">
+        <br />
         <p>
-          Bediening van een website is één van de belangrijkste onderdelen. Zonder goede bediening ook geen interactie.
+          Als bezoekers met het toetsenbord naar een onderdeel op de pagina kunnen
+          navigeren, maar er niet meer vandaan kunnen dan is dit een toetsenbordval. Om
+          uit een toetsenbordval te raken is de enige manier vaak om de muis (of ander
+          aanwijsapparaat) te gebruiken of om de pagina helemaal te herladen. Dit is dit
+          geen optie voor bezoekers die geen gebruik kunnen maken van de muis. Dit komt
+          soms voor als er plugins worden gebruikt.
+
+          <br /><br />Zorg dat met het toetsenbord helemaal over de pagina kan worden
+          genavigeerd.
         </p>
-        <br>
+      </div>
+
+      <button class="accordion">
+        Geef bezoekers de mogelijkheid om sneltoetsen zelf in te stellen of uit te zetten
+      </button>
+      <div class="panel">
+        <br />
         <p>
-          Veel bezoekers gebruiken een muis en toetsenbord om over het web te navigeren. 
-          Maar dit is niet voor iedereen vanzelfsprekend. 
-          Zorg dat functionaliteit niet alleen via muis of toetsenbord te gebruiken is.
+          Op sommige websites kunnen bezoekers gebruik maken van sneltoetsen. Met
+          sneltoetsen kunnen bezoekers gemakkelijk functies uitvoeren of navigeren naar
+          een pagina. Dit werkt goed voor veel bezoekers die gebruik maken van het
+          toetsenbord maar kunnen conflicteren sommige hulptechnologieën. Hierdoor kunnen
+          sneltoetsen onbedoeld worden geactiveerd. Dit geldt bijvoorbeeld voor bezoekers
+          die gebruik maken van software voor spraakherkenning.
+
+          <br /><br />Zorg daarom dat sneltoetsen die bestaan uit één karakter kunnen
+          worden aangepast, uitgeschakeld of alleen geactiveerd kunnen worden als het
+          onderdeel de toetsenbordfocus heeft.
         </p>
-      </header>
+      </div>
 
-      <div class="box">
-        <button class="accordion">
-          Zorg dat afbeeldingen in de code een tekst alternatief kunnen krijgen
-        </button>
-        <div class="panel">
-          <p>
-            Alle afbeeldingen moeten een tekstalternatief hebben. Een
-            tekstalternatief kan op verschillende manieren worden toegevoegd:
-          </p>
-          <br>
-          <h4>Tekstalternatief voor een <code>&ltimg&gt</code>-element</h4>
-          <br>
-          <p>
-            Bij een <code>&ltimg&gt</code>-element wordt een tekstalternatief gegeven met behulp van het alt-attribuut.
-            In de code ziet dat er zo uit:
-          </p>
-          <br>
-          <pre>
-            1| &ltimg src="hond.jpg" alt="Hond speelt met een bal"&gt
-          </pre>
-          <br>
-          <h4>Tekstalternatief voor een <code>&ltsvg&gt</code>-element</h4>
-          <br>
-          <p>
-            Bij een <code>&ltsvg&gt</code>-element wordt een tekstalternatief gegeven met behulp van het title-element in de svg. 
-            Gebruik ook aria-attribuut role="img" om ervoor te zorgen dat zo veel mogelijk ondersteunende technologieën het 
-            <code>&ltsvg&gt</code>-element herkennen als een afbeelding.
-            In de code ziet dat er zo uit:
-          </p>
-          <br>
-          <pre>
-            1| &ltsvg role="img">
-            2| &lttitle&gtHond speelt met een bal&lt/title&gt
-            3| ...
-            4| &gt/svg
-          </pre>
-          <br>
-          <h4>
-            Tekstalternatief voor afbeeldingen die is geplaatst met css
-          </h4>
-          <br>
-          <p>
-            Aan een afbeelding die geplaatst is met CSS kan een tekstalternatief worden gegeven met een <code>aria-label</code>.
-          </p>
-          <br>
-          <pre>
-            1| &ltdiv id=”logo” aria-label=”Hond speelt met een bal”&gt
-          </pre>
-          <br>
-          <h4>Invulling van het tekstalternatief</h4>
-          <br>
-          <p>
-            De invulling van een tekstalternatief wordt bepaald door de functie die een afbeelding heeft. 
-            In veel gevallen draagt een afbeelding informatie over. 
-            Beschrijf dan in het tekstalternatief wat er op de afbeelding te zien is. 
-            Bij een afbeelding die ook een link is, gaat het juist om het beschrijven waar de link naar toe verwijst. 
-            Als een afbeelding geen informatie aan de pagina toevoegt, 
-            dan is het beter om het helemaal geen tekstalternatief te geven zodat het kan worden genegeerd door hulptechnologieën.
-          </p>
-        </div>
+      <button class="accordion">
+        Zorg voor een eenvoudige bediening voor acties die door aanraking of gebaren
+        worden geactiveerd
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Sommige functionaliteit op een website is alleen te uit te voeren met een
+          moeilijk gebaar. Bijvoorbeeld gebaren waarbij de bezoeker meerdere vingers moet
+          gebruiken (meerpuntsgebaren) of gebaren waarbij de bezoeker een vinger (of de
+          aanwijzer) in een bepaald pad moet bewegen (pad gebaseerde gebaren). Bezoekers
+          kunnen, om verschillende redenen, soms niet in staat zijn om moeilijke gebaren
+          te maken met hun vingers of met een aanwijzer. Bijvoorbeeld door een motorische
+          beperking.
 
-        <button class="accordion">
-          Geef afbeeldingen die informatie overdragen een beschrijvend
-          tekstalternatief
-        </button>
-        <div class="panel">
-          <br>
-          <p>
-            Afbeeldingen die informatie overbrengen zijn noodzakelijk voor het begrijpen van de tekst. 
-            De afbeeldingen voegen extra informatie toe aan de pagina. 
-            Deze afbeeldingen moeten een tekstalternatief hebben dat nauwkeurig beschrijft wat er op de afbeelding te zien is.
-            De invulling is afhankelijk van de context en kan per situatie afwijkend zijn voor dezelfde afbeelding.
-          </p>
-          <br />
-          <p>
-            In een CMS kan een tekstalternatief doorgaans worden toegevoegd in de mediatheek.
-          </p>
-          <br>
-          <p>
-            In de code ziet dat er zo uit:
-          </p>
-          <br>
-          <pre>
-            &ltimg src="poes.jpg" alt="Witte poes speelt met een rode bal"&gt
-          </pre>
-          <br>
-          <p>
-            Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. 
-            Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. 
-            Houd een tekstalternatief altijd nuttig en beknopt.
-          </p>
-        </div>
+          <br /><br />Zorg dat functionaliteit die met gebaren wordt geactiveerd, ook met
+          een klik, dubbelklik of klikken-en-vasthouden van een muis kan worden
+          geactiveerd. Dit kan bijvoorbeeld met een eenvoudige bediening toe te voegen.
+        </p>
+      </div>
 
-        <button class="accordion">
-          Geef complexe afbeeldingen een langere beschrijvng
-        </button>
-        <div class="panel">
-          <br>
-            <p>
-              Soms is het niet mogelijk om een afbeelding volledig te beschrijven in een kort tekstalternatief. 
-              Bijvoorbeeld als het gaat om een uitgebreide infographic of een grafiek. 
-              Dit soort complexe afbeeldingen moeten ook volledig worden beschreven in een tekstalternatief. 
-              Geef in dat geval naast een beknopte beschrijving in het <code>alt</code>-attribuut ook een langere beschrijving in de 
-              omringende tekst.
-            </p>
-          <br>
-          <pre>
-  1| &ltimg src="grafiek.jpg" alt="Verkoopcijfers zijn in 2021 met 18% gestegen"&gt
-  2| &ltdiv&gt
-  3| &ltp&gtDe groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:&lt/p&gt
-  4| &ltul&gt
-  5| &ltli&gtJanuari: +22%&ltli&gt
-  6| &ltli&gt...
-  7| &ltdiv&gt
-          </pre>
-          <br>
-          <p>
-            Een langere beschrijving mag ook op een aparte pagina worden geplaatst. 
-            Plaats dan een link met de verwijzing naar die andere pagina direct voor of na de afbeelding.
-          </p>
-          <br>
-          <pre>
-  1| &ltimg src="grafiek.jpg" alt="Verkoopcijfers zijn in 2021 met 18% gestegen"&gt
-  2| &lta href=”/langere-beschrijving.html”>Uitgebreide beschrijving van de grafiek met verkoopcijfers&lt/a&gt
-          </pre>
-          <br>
-          <p>
-            De omringende tekst hoort ook te worden gekoppeld aan de afbeelding. 
-            Dit is geen verplichting maar wel erg handig. 
-            Hiervoor kan gebruik worden gemaakt van het <code>aria-describedby</code>-attribuut. 
-            Gebruik het <code>ID</code>van het element waar de complexe afbeelding beschreven wordt. 
-            Deze informatie hoort dan ook zichtbaar te zijn voor bezoekers die wel kunnen zien.
-          </p>
-          <br>
-          <pre>
-  1| &ltimg src="grafiek.jpg" alt="Verkoopcijfers zijn in 2020 met 18% gestegen" aria-describedby="beschrijving"&gt
-  2| &ltdiv id="beschrijving"&gt
-  3| &ltp&gtDe groei van maandelijkse verkopen in 2020 tegen 2019 verliep als volgt:&lt/p&gt
-  4| &ltul&gt
-  5| &ltli>Januari: +22%&lt/li&gt
-  6| &ltli&gt...
-  7| &lt/div&gt
-          </pre>
-        </div>
+      <button class="accordion">
+        Gebruik niet alleen apparaatbewegingen voor het uitvoeren van een actie
+      </button>
+      <div class="panel">
+        <br />
+        <p>
+          Acties die in worden geactiveerd door een apparaat te kantelen of te schudden
+          zijn niet goed toegankelijk voor sommige bezoekers. Bezoekers met een motorische
+          beperking kunnen deze acties bijvoorbeeld onbedoeld uitvoeren. Er zijn ook
+          bezoekers die dit niet, of niet goed, kunnen bedienen omdat het apparaat op een
+          vaste plek is bevestigd aan bijvoorbeeld een rolstoel. Ook het maken van gebaren
+          naar een camera die deze de bewegingen kan interpreteren valt onder
+          bewegingsactivering.
 
-        <button class="accordion">
-          Geef afbeeldingen die ook een link zijn een tekstalternatief dat het
-          doel van de link beschrijft
-        </button>
-        <div class="panel">
-          <br />
-            <p>
-              In de gevallen dat niet tekst maar alleen een afbeelding als link wordt gebruikt, 
-              spreken we over functionele afbeeldingen. 
-              Dit kunnen afbeeldingen zijn die verwijzen naar een andere pagina of website, 
-              maar ook afbeeldingen die een actie op de pagina uitvoeren.
-            </p>
-          <br>
-            <p>
-              Deze afbeeldingen moeten een tekstalternatief hebben dat het doel van de link beschrijft, 
-              of die beschrijft wat er gebeurd als op de afbeelding wordt geklikt. 
-              Voorleessoftware gebruikt het tekstalternatief namelijk als linktekst. 
-              Daarom is het belangrijker om het doel van de link te beschrijven, 
-              in plaats van wat er op de afbeelding te zien is.
-            </p>
-            <br>
-            <p>
-              Als er ook tekst staat op een functionele afbeelding, 
-              dan moeten de tekst op de afbeelding én het doel van de link allebei in het tekstalternatief worden vermeld. 
-              Hierdoor kunnen bezoekers die met spraakherkenning werken de link ook makkelijk bereiken.
-            </p>
-        </div>
-
-        <button class="accordion">
-          Zorg dat decoretieve afbeeldingen door hulptechnologieen genegeerd
-          kunnen worden
-        </button>
-        <div class="panel">
-          <br>
-            <p>
-              Afbeeldingen die puur ter decoratie op de pagina zijn geplaatst, horen geen tekstalternatief te hebben. 
-              Dit zijn bijvoorbeeld afbeeldingen die geen informatie overdragen en 
-              niet noodzakelijk zijn voor het begrijpen van de tekst. 
-              Deze afbeeldingen moeten worden genegeerd door hulptechnologieën. 
-              Decoratieve afbeeldingen kunnen het best met CSS worden geplaatst.
-            </p>
-          <br>
-          <pre>
- 1| &ltdiv class="line"&gt&lt/div&gt
-          </pre>
-          <br>
-          <pre>
-  .line {
-  background-image: url("horizontale-lijn.jpg");
-  }
-          </pre>
-          <br>
-          <p>
-            Als het niet mogelijk is om een decoratieve afbeelding met CSS te plaatsen, 
-            dan moet het <code>alt</code>-attribuut in het <code>&ltimg&gt</code>-element worden leeg gelaten. 
-            Het<code>alt</code>-attribuut moet wel aanwezig zijn maar het heeft dan geen tekst.
-          </p>
-          <br>
-          <pre>
-  2| &ltimg src="horizontale-lijn.jpg" alt="" /&gt
-          </pre>
-        </div>
-
-        <button class="accordion">Gebruik geen afbeeldingen van tekst</button>
-        <div class="panel">
-          <br>
-          <p>
-            Gebruik geen afbeeldingen van tekst om informatie over te dragen. 
-            Afbeeldingen van tekst zijn voor sommige bezoekers niet handig. 
-            De lettergrootte in een afbeelding schaalt namelijk vaak niet goed mee. 
-            Ook kunnen bezoekers tekst die is ingebakken in een afbeelding niet aanpassen naar eigen voorkeuren.
-          </p>
-          <br>
-          <p>
-            Gebruik daarom ‘echte’ tekst. Tekst die daadwerkelijk als tekst op de pagina staat kan goed worden vormgegeven met CSS. 
-            Hiermee kan bijvoorbeeld de kleur, het lettertype, de lettergrootte, d
-            e regelhoogte en de letterafstand en worden ingesteld. 
-            Eventueel kan tekst met CSS ook bovenop een afbeelding worden geplaatst.
-          </p>
-        </div>
-
-        <button class="accordion">Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden uitgezet</button>
-        <div class="panel">
-          <p>
-            Zorg dat alle bewegende, scrollende of knipperende content dat automatisch start én 
-            langer dan 5 seconden duurt kan worden gepauzeerd, gestopt of worden uitgezet. 
-            Onder bewegende, scrollende of knipperende content vallen onder andere carrousels, 
-            animaties op de pagina, bewegende advertenties, enz. 
-            Bezoekers met een cognitieve beperking kunnen er door worden afgeleid. 
-            Ook voor bezoekers die gebruik maken van een schermlezer kan dit storend zijn.
-          </p>
-          <br>
-          <p>
-            Deze regels gelden ook alle automatisch verversende content, 
-            maar hiervoor geldt ook de frequentie van updates mag worden aangepast.
-          </p>
-        </div>
-
-        <button class="accordion">Gebruik geen content dat meer dan 3 keer per seconde flitst</button>
-        <div class="panel">
-          <p>
-            Gebruik geen flitsende content. Laat onderdelen in elk geval niet meer dan 3 keer per seconde flitsen. 
-            Bezoekers met bepaalde vormen van epilepsie kunnen een aanval krijgen als ze kijken naar knipperende 
-            of flitsende afbeeldingen of media.
-          </p>
-        </div>
+          <br /><br />Laat bezoekers daarom de bewegingsactivering uitschakelen of zorg
+          dat acties die kunnen worden geactiveerd met bewegingsactivering ook te
+          activeren zijn met een alternatieve bediening.
+        </p>
       </div>
     </div>
     <script src="scripts/script.js"></script>
