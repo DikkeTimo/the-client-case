@@ -87,7 +87,7 @@ a button {
 }
 
 a button:hover {
-  opacity: 1;
+  opacity: 0.8;
   font-size: 20px;
   transition-duration: 0.5s;
 }
@@ -97,7 +97,7 @@ a button:hover {
 /* onderstaande regels is voor overige pagina's */
 
 header {
-  max-width: 30em;
+  max-width: 30rem;
   margin: 5%;
 }
 
@@ -117,6 +117,11 @@ header {
   width: 50rem;
   height: 4em;
   font-size: 1rem;
+}
+
+.accordion:hover {
+  opacity: 0.7;
+  transition-duration: 0.4s;
 }
 
 .accordion:after {
@@ -150,10 +155,10 @@ h4 {
   flex-direction: column;
   position: absolute;
   margin-top: 3%;
-  margin-left: 65em;
+  margin-left: 63em;
   gap: 25px;
   border: outset #b9005f;
-  padding: 30px;
+  padding: 1em 4em;
 }
 
 code {
@@ -174,4 +179,35 @@ pre {
 
 p {
   text-align: left;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #b9005f;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 375px) and (max-width: 414px) {
+  nav {
+    min-width: 150%;
+    height: 6rem;
+  }
+
+  span {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .button {
+    margin-left: 5%;
+    margin-top: 5rem;
+  }
 }
