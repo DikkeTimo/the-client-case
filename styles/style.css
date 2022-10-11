@@ -101,6 +101,10 @@ header {
   margin: 5%;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 .box {
   margin-top: 7em;
   margin-left: 5%;
