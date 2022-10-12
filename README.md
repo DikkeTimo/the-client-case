@@ -11,7 +11,7 @@
 
 ## Beschrijving
 
-Het doel is om een website te maken voor de partners van Vervoerregio Amsterdam om te laten zien wat je moet doen om de desbetreffende website toegankelijk te maken. De toegankelijkheid wordt een groot probleem als mensen met een beperking websites proberen te bezoeken maar deze zijn niet goed toegankelijk.
+Het doel is om een website te maken voor de partners van Vervoerregio Amsterdam om te laten zien wat je moet doen om de desbetreffende website toegankelijk te maken. De toegankelijkheid wordt een groot probleem als mensen met een beperking websites proberen te bezoeken maar deze niet goed toegankelijk zijn.
 
 Backlog item:
 
@@ -19,11 +19,21 @@ Backlog item:
 
 <br>
 
-Vervoerregio Amsterdam wil kunnen laten zien aan partners wat zei moeten
+Vervoerregio Amsterdam wil kunnen laten zien aan partners wat zei moeten doen om hun website toegankelijker te maken.
+
+<br>
 
 <img width="70%" src="assets/frontpage.png" alt="Front pagina">
 
 <img width="70%" src="assets/secondpage.png" alt="Tweede pagina">
+
+<br>
+
+Op de site kan je zien wat je per onderwerp kan doen om een website toegankelijker te maken. Je kan klikken op bijvoorbeeld afbeeldingen, dan kom je op een andere site wat laat zien wat je kan kan aan dit specifieke onderwerp.
+
+<br>
+
+https://dikketimo.github.io/the-client-case/
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
