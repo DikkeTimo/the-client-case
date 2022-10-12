@@ -7,7 +7,6 @@
 }
 
 body {
-  position: relative;
   background-color: #ffe6f3;
 }
 
@@ -15,7 +14,7 @@ nav {
   background-color: white;
   display: flex;
   gap: 65%;
-  height: 9ch;
+  height: 10ch;
 }
 
 a:nth-of-type(1) {
@@ -38,19 +37,22 @@ img:nth-child(1) {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
+  padding-top: 4em;
+  margin: auto 30rem;
 }
 
 h1 {
   font-size: 2em;
   color: white;
   background-color: #b9005f;
+  margin-top: 7rem;
   border-radius: 10px;
   opacity: 0.8;
   position: absolute;
   padding-top: 2.5rem;
   width: 15em;
-  height: 4em;
+  height: 5em;
   top: 25%;
   left: 35%;
 }
@@ -61,24 +63,24 @@ img:nth-child(2) {
 }
 
 .content {
+  background-image: url(../assets/a4e2c970-9833-4f7e-9d02-d919f6426e5e.png);
+  background-size: cover;
   color: rgb(13, 13, 13);
   text-align: center;
-  margin-top: 5rem;
 }
 
 .button {
   display: flex;
   flex-direction: column;
-  margin-left: 3rem;
+  margin-left: 5rem;
   width: 40ch;
-  gap: 15px;
-  align-items: center;
+  gap: 25px;
+  padding-bottom: 7rem;
 }
 
 a button {
   background-color: #b9005f;
   border-color: white;
-  position: relative;
   color: white;
   min-width: 13rem;
   min-height: 2.3rem;
@@ -197,13 +199,26 @@ p {
 }
 
 @media (min-width: 375px) and (max-width: 414px) {
-  nav {
-    min-width: 150%;
-    height: 6rem;
-  }
-
   span {
     display: none;
+  }
+
+  nav {
+    margin-left: 3.5rem;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .info {
+    height: 0 auto;
+  }
+
+  .content {
+    height: 5rem;
+    padding: auto;
+    background-image: none;
   }
 
   .footer {
@@ -212,6 +227,20 @@ p {
 
   .button {
     margin-left: 5%;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    gap: 20px;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .accordion {
+    max-width: 20rem;
+    height: 7rem;
+  }
+
+  .panel {
+    text-align: left;
   }
 }
