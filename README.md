@@ -11,9 +11,11 @@
 
 ## Beschrijving
 
-```
-Als organisatie wil ik meer informatie over een toegankelijkheidsverbetering kunnen lezen zodat ik beter begrijp waarom en hoe het helpt mijn website/app toegankelijker te maken
-```
+`Als organisatie wil ik meer informatie over een toegankelijkheidsverbetering kunnen lezen zodat ik beter begrijp waarom en hoe het helpt mijn website/app toegankelijker te maken`
+
+<img src="assets/frontpage.png" alt="Front pagina">
+
+<img src="assets/secondpage.png" alt="Tweede pagina">
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
