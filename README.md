@@ -11,6 +11,8 @@
 
 ## Beschrijving
 
+De Vervoerregio is een samenwerkingsverband van veertien gemeenten op het gebied van verkeer en openbaar vervoer. Om op een goede manier te overleggen en besluiten te nemen zijn er diverse (bestuurs)vormen van overleg: De regioraad, het dagelijks bestuur, portefeuillehoudersoverleggen en commissies.
+
 Het doel is om een website te maken voor de partners van Vervoerregio Amsterdam om te laten zien wat je moet doen om de desbetreffende website toegankelijk te maken. De toegankelijkheid wordt een groot probleem als mensen met een beperking websites proberen te bezoeken maar deze niet goed toegankelijk zijn.
 
 Backlog item:
