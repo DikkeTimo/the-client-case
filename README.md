@@ -15,7 +15,7 @@ Het doel is om een website te maken voor de partners van Vervoerregio Amsterdam 
 
 Backlog item:
 
-`Als organisatie wil ik meer informatie over een toegankelijkheidsverbetering kunnen lezen zodat ik beter begrijp waarom en hoe het helpt mijn website/app toegankelijker te maken`
+<img width="70%" src="assets/backlogitem.png" alt="backlogitem">
 
 <br>
 
