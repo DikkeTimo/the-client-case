@@ -48,3 +48,11 @@ https://dikketimo.github.io/the-client-case/
 In dit project is veel html gebruikt, daarbij css en javascript. Voor elk onderwerp is een aparte html pagina gebruikt.
 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+
+## Bronnen
+
+  <ul>
+    <li>https://www.vervoerregio.nl/</li>
+    <li>https://wcag.nl/kennisbank/</li>
+    <li>https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x</li>
+  </ul>
