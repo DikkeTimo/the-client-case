@@ -21,7 +21,7 @@ Backlog item:
 
 <br>
 
-Vervoerregio Amsterdam wil kunnen laten zien aan partners wat zei moeten doen om hun website toegankelijker te maken.
+Vervoerregio Amsterdam wil kunnen laten zien aan partners wat zij moeten doen om hun website toegankelijker te maken.
 
 <br>
 
